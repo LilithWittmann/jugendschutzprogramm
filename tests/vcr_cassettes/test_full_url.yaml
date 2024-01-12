@@ -1,0 +1,49 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://jpad.labeloffice.com/json.php?url=bild.de&age=16&otf=y&unk=y&par=jpad&tok=74c807
+  response:
+    body:
+      string: '{"show":"1","overrule":"1","cache":"1","type":"sp","list":"all jusprog-web2","cou":"all","urlcheck":"0","age":"12","otf":0,"age-icon":"http:\/\/icons.jusprog.de\/age-de\/jusprog-age-de-icon-12.png","age-issuer":"JusProg
+        e.V.","country":"all","scope-url":"*.bild.de\/*"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Fri, 12 Jan 2024 22:18:06 GMT
+      Referrer-Policy:
+      - origin
+      Server:
+      - nginx/1.18.0
+      Strict-Transport-Security:
+      - max-age=15768000
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Robots-Tag:
+      - all
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

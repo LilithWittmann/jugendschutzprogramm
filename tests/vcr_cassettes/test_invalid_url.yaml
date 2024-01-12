@@ -1,0 +1,190 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://jpad.labeloffice.com/json.php?url=invalidurl&age=16&otf=y&unk=y&par=jpad&tok=3a0e10
+  response:
+    body:
+      string: '{"show":"1","overrule":"1","cache":"0","type":"sh","list":"all labeloffice-04","cou":"all","urlcheck":"0","age":6,"otf":1,"age-icon":"http:\/\/icons.jusprog.de\/age-de\/jusprog-age-de-icon-6.png","age-issuer":"JusProg
+        e.V.","country":"all","scope-url":"invalidurl\/*"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Fri, 12 Jan 2024 22:21:12 GMT
+      Referrer-Policy:
+      - origin
+      Server:
+      - nginx/1.18.0
+      Strict-Transport-Security:
+      - max-age=15768000
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Robots-Tag:
+      - all
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://jpad.labeloffice.com/json.php?url=sexism-invalid-url&age=16&otf=y&unk=y&par=jpad&tok=ed0a18
+  response:
+    body:
+      string: '{"show":"1","overrule":"1","cache":"0","type":"sh","list":"all labeloffice-03","cou":"all","urlcheck":"0","age":6,"otf":1,"age-icon":"http:\/\/icons.jusprog.de\/age-de\/jusprog-age-de-icon-6.png","age-issuer":"JusProg
+        e.V.","country":"all","scope-url":"sexism-invalid-url\/*"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Fri, 12 Jan 2024 22:21:12 GMT
+      Referrer-Policy:
+      - origin
+      Server:
+      - nginx/1.14.2
+      Strict-Transport-Security:
+      - max-age=15768000
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Robots-Tag:
+      - all
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://jpad.labeloffice.com/json.php?url=xxx-invalid-url&age=16&otf=y&unk=y&par=jpad&tok=8fbb15
+  response:
+    body:
+      string: '{"show":"1","overrule":"1","cache":"0","type":"sh","list":"all jusprog-web2","cou":"all","urlcheck":"0","age":6,"otf":1,"age-icon":"http:\/\/icons.jusprog.de\/age-de\/jusprog-age-de-icon-6.png","age-issuer":"JusProg
+        e.V.","country":"all","scope-url":"xxx-invalid-url\/*"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Fri, 12 Jan 2024 22:21:12 GMT
+      Referrer-Policy:
+      - origin
+      Server:
+      - nginx/1.18.0
+      Strict-Transport-Security:
+      - max-age=15768000
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Robots-Tag:
+      - all
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.31.0
+    method: GET
+    uri: https://jpad.labeloffice.com/json.php?url=sex-xxx-unused-domain.de&age=16&otf=y&unk=y&par=jpad&tok=f01624
+  response:
+    body:
+      string: '{"show":"1","overrule":"1","cache":"0","type":"sh","list":"all jusprog-web2","cou":"all","urlcheck":"0","age":6,"otf":1,"age-icon":"http:\/\/icons.jusprog.de\/age-de\/jusprog-age-de-icon-6.png","age-issuer":"JusProg
+        e.V.","country":"all","scope-url":"sex-xxx-unused-domain.de\/*"}'
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - text/html; charset=UTF-8
+      Date:
+      - Fri, 12 Jan 2024 22:21:12 GMT
+      Referrer-Policy:
+      - origin
+      Server:
+      - nginx/1.14.2
+      Strict-Transport-Security:
+      - max-age=15768000
+      Transfer-Encoding:
+      - chunked
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      X-Robots-Tag:
+      - all
+      X-XSS-Protection:
+      - 1; mode=block
+    status:
+      code: 200
+      message: OK
+version: 1

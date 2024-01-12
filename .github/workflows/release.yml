@@ -1,0 +1,62 @@
+name: Releases
+
+permissions:
+  contents: write
+  issues: write
+  packages: write
+  pull-requests: write
+  repository-projects: write
+  security-events: write
+  statuses: write
+
+on:
+  push:
+    tags:
+    - '*'
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: [ "3.11" ]
+        platform: [ ubuntu-latest ]
+    runs-on: ${{ matrix.platform }}
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v3
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip poetry
+        poetry self add poetry-version-plugin
+        poetry install
+    - name: Build
+      run: |
+          poetry build
+    - uses: ncipollo/release-action@v1
+      with:
+        artifacts: "dist/*"
+    - uses: actions/upload-artifact@master
+      with:
+        name: Build
+        path: dist/
+  pypi-publish:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/jugendschutzprogramm
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/download-artifact@master
+        with:
+          name: Build
+          path: dist/
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          packages-dir: dist/
