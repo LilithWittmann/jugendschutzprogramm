@@ -1,1 +1,5 @@
-from jugendschutzprogramm.api import JugendschutzAPIClient, APIResult, JugendschutzAPIClientException
+from jugendschutzprogramm.api import (
+    JugendschutzAPIClient,
+    APIResult,
+    JugendschutzAPIClientException,
+)
