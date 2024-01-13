@@ -22,6 +22,7 @@ class APIResult:
     scope_url: str  # the url that was checked
     show: bool  # whether the website is allowed to be accessed
     cache: str  # whether the result was cached
+    hostname: str  # the hostname of the url that was checked
 
     overrule: str
     type: str
@@ -106,6 +107,7 @@ class JugendschutzAPIClient:
         result["cache"] = True if result["cache"] == "1" else False
 
         result["age"] = int(result["age"])
+        result["hostname"] = hostname
 
         result = APIResult(**result)
         return result
