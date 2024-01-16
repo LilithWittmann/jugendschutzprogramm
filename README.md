@@ -24,4 +24,4 @@ print(result.scope_url)
 This project is licensed under the terms of the Apache 2.0 license.
 
 ## Disclaimer
-This project is not affiliated with or encouraged by the [Jugendschutzprogramm](https://www.jugendschutzprogramm.de/). However it is a helpful for journalists and researchers to check if a website is blocked by the [Jugendschutzprogramm](https://www.jugendschutzprogramm.de/).
+This project is not affiliated with or encouraged by the [Jugendschutzprogramm](https://www.jugendschutzprogramm.de/). However, it is a helpful tool for journalists and researchers to check if a website is blocked by the [Jugendschutzprogramm](https://www.jugendschutzprogramm.de/).
