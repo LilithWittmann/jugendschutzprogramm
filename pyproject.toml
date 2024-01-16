@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "jugendschutzprogramm"
-version = "0.1.1"
+version = "0.1.2"
 description = "An API Client to query the API of the one and only officially approved sfilter solution in Germany to protect minors from harmful content on the internet."
 authors = ["Lilith Wittmann <mail@lilithwittmann.de>"]
 license = "Apache 2.0"

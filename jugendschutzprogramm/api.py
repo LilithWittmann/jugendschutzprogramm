@@ -6,7 +6,6 @@ import requests
 
 
 TOKEN_SECRET = "vopfe2krtkmotr"
-INPUT_FILE = "de_domains.csv"
 BASE_URL = "https://jpad.labeloffice.com/json.php"
 
 
