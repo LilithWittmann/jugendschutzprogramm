@@ -13,7 +13,7 @@ pip install jugendschutzprogramm
 from jugendschutzprogramm import JugendschutzAPIClient 
 
 client = JugendschutzAPIClient()
-result = client.check("https://www.google.com")
+result = client.check_age(url="https://www.google.com", age=6) # the age is the age we use to check agains the api because it might influence the returned allowed age.
 
 print(result)
 print(result.age)
